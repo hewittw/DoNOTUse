@@ -254,8 +254,9 @@ extension PhotogrammetrySession.Configuration.FeatureSensitivity {
 // MARK: - Main
 
 // Run the program until completion.
-if #available(macOS 12.0, *) {
-    HelloPhotogrammetry.main()
-} else {
-    fatalError("Requires minimum macOS 12.0!")
-}
+
+HelloPhotogrammetry.main(["/Users/school/Desktop/testFiles6",
+                             "/Users/school/Desktop/testFiles6_usdz/testFiles6_full.usdz",
+                             "-d", "full",
+                             "-o", "sequential",
+                             "-f", "normal"])
